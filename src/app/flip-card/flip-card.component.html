@@ -1,0 +1,9 @@
+<div class="container">
+  <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+    <div class="front" (click)="toggle($event)">
+      <ng-content select="flip-card-front"></ng-content>
+    </div>
+    <div class="back" (click)="toggle($event)">
+      <ng-content select="flip-card-back"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  /* scroll-snap-type: y mandatory; */
+}
+
+
+/* This will make each component take one row */
+about,
+projects,
+skills,
+contact {
+  padding-top: 10vh;
+  width: 90%;
+  /* padding-top: 4vh;*/
+  min-height: 90vh;
+  margin-bottom: 4rem;
+  padding-right: 1rem;
+}
+
+
+/* NAVBAR SECTION */
+navbar {
+  position: sticky;
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Stretch it to full width */
+  width: 100%;
+  z-index: 1;
+  height: 0vh;
+}
+@media only screen and (max-width: 1024px) {
+  navbar {
+    margin-bottom: 0;
+    display: none;
+  }
+  about {
+    transform: translateY(-100px);
+    padding-bottom: 0;
+    max-height: 900px;
+  }
+  about,
+  projects,
+  skills,
+  contact {
+    padding-top: 10vh;
+    width: 90%;
+    /* padding-top: 4vh;*/
+    min-height: auto;
+  }
+  footer-component {
+    height: 50px;
+  }
+  
+}
+@media (max-width: 767px) {
+  about {
+    max-height: 1700px;
+    transform: translateY(0);
+  }
+}

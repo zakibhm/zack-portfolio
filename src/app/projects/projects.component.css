@@ -1,0 +1,210 @@
+.projects-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.header {
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.header span {
+  font-weight: bold;
+  color: #80002a;
+}
+
+.projects-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+/* PROJECT SECTION */
+
+
+
+/* FRONT CARD SECTION */
+.front-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem ;
+}
+.image-project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-project-container img {
+  width: 80%;
+  height: auto;
+  transform: translateY(-6px);
+  transform: scale(0.9);
+}
+.front-card h2{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* PROJECT1 SECTION */
+.project1 .icon-section {
+  margin-left: auto;
+}
+#project1 .figma-icon p {
+  transform: translateY(-8px);
+}
+
+
+
+
+.project1 span {
+  color:#007acc ;
+}
+/* PROJECT2 SECTION */
+.project2 span {
+  color: #00b300;
+}
+
+/* PROJECT3 SECTION */
+.project3 img {
+  border-radius: 10px;
+  scale: 0.95;
+}
+.project3 span {
+  color:#cc7a00 ;
+}
+
+
+/* PROJECT4 SECTION */
+.project4 span {
+  color:#007acc;
+}
+
+/* PROJECT5 SECTION */
+.project5 span {
+  color: #5900b3;
+}
+
+/* PROJECT4 SECTION */
+.project6 span {
+  color: #5900b3;
+}
+
+
+
+/* BACK CARD SECTION */
+.back-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.back-card span {
+  color: #80002a;
+  font-weight: bold;
+}
+
+.back-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.link-code {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.link-code p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.link-code .fa-github{
+  margin-left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  animation: beatHeart 0.5s infinite alternate; 
+}
+.link-code i:hover{
+  color: #400080;
+  scale: 1.2;
+  animation-play-state: paused;
+}
+@keyframes beatHeart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1366px) {
+  .projects-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+@media(max-width: 1365px) {
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .projects-list {
+    margin-top: 0;
+    scale: 0.95;
+    gap: 2rem 3rem;
+  }
+  .front-card {
+    padding: 0 1rem;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    scale: 1;
+  }
+  .front-card h2 {
+    margin-bottom: 0;
+  }
+  
+}
+@media (max-width: 767px) {
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .header {
+    text-align: center;
+  }
+}

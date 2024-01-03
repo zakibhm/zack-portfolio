@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  height: 100vh; 
+}
+
+image-component {
+  flex: 0 0 35%;   
+}
+
+portfolio {
+  flex: 0 0 65%; /* This will make the portfolio take the other 50% of the width */
+}
+footer-component {
+  height: 0px;
+}
+
+@media (max-width: 1024px) {
+  div {
+    flex-direction: column;
+  }
+  image-component {
+    flex: 0 0 0%; /* This will make the image take the full width */
+  }
+  portfolio {
+    flex: 0 0 100%; /* This will make the portfolio take the full width */
+  }
+}

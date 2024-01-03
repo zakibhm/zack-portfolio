@@ -1,0 +1,424 @@
+.about-component {
+  margin-top:5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-component {
+  opacity: 0;
+  animation: fade-in 0.7s ease-in-out forwards;
+}
+
+.presentation-component > * {
+  opacity: 0;
+  animation: fade-in 0.7s ease-in-out forwards;
+
+}
+
+.presentation-component > *:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.presentation-component > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.presentation-component > *:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.education-component{
+  animation-delay: 0.8s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+.mobile-section {
+  display: none;
+  height: 0;
+}
+.mobile-span {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+div h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+div h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+
+}
+p span span {
+  font-weight: bold;
+  color: #80002a;
+}
+
+
+
+/* EDUCATION SECTION  */
+.education-component {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-component .university, .graduation {
+  max-width: 300px;
+  margin: 1rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem 15px;
+  border: lightgray 2px solid;
+
+}
+
+.education-component .graduation {
+  animation: back-ground-color 10s ease-in-out infinite;
+}
+
+.education-component i {
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+.education-component h3 {
+  margin-bottom: 1rem;
+}
+
+.education-component a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* LOADIND DOT SECTION */
+
+.loading-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  color: black;
+  width: 30%;
+
+}
+
+.loading-dots div {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin:2px;
+  opacity: 0;
+}
+/* LOADIND DOT ANIMATION */
+@keyframes fade-in1{
+  0%{
+    opacity: 0; /* Start with opacity 0 */
+  }
+  10% {
+    opacity: 0; /* Gradually fade in */
+  }
+  11% {
+    opacity: 1; /* Gradually fade in */
+  }
+  95% {
+    opacity: 1; /* Remain visible */
+  }
+  100% {
+    opacity: 0; /* Remain visible */
+  }
+}
+@keyframes fade-in2{
+  0%{
+    opacity: 0; /* Start with opacity 0 */
+  }
+  20% {
+    opacity: 0; /* Gradually fade in */
+  }
+  21% {
+    opacity: 1; /* Gradually fade in */
+  }
+  95% {
+    opacity: 1; /* Remain visible */
+  }
+  100% {
+    opacity: 0; /* Remain visible */
+  }
+}
+@keyframes fade-in3{
+  0%{
+    opacity: 0; /* Start with opacity 0 */
+  }
+  30% {
+    opacity: 0; /* Gradually fade in */
+  }
+  31% {
+    opacity: 1; /* Gradually fade in */
+  }
+  95% {
+    opacity: 1; /* Remain visible */
+  }
+  100% {
+    opacity: 0; /* Remain visible */
+  }
+}
+@keyframes fade-in4{
+  0%{
+    opacity: 0; /* Start with opacity 0 */
+  }
+  40% {
+    opacity: 0; /* Gradually fade in */
+  }
+  41% {
+    opacity: 1; /* Gradually fade in */
+  }
+  95% {
+    opacity: 1; /* Remain visible */
+  }
+  100% {
+    opacity: 0; /* Remain visible */
+  }
+}
+@keyframes fade-in5{
+  0%{
+    opacity: 0; /* Start with opacity 0 */
+  }
+  50% {
+    opacity: 0; /* Gradually fade in */
+  }
+  51% {
+    opacity: 1; /* Gradually fade in */
+  }
+  95% {
+    opacity: 1; /* Remain visible */
+  }
+  100% {
+    opacity: 0; /* Remain visible */
+  }
+}
+@keyframes back-ground-color{
+  0%{
+    background-color: white;
+    color: black;
+    border: lightgray 2px solid;
+  }
+  61% {
+    background-color: white; 
+    color: black;
+    border: lightgray 2px solid;
+    scale: 1;
+  }
+  66% {
+    background-color: #80002a; /* Gradually fade in */
+    color: white;
+    border: #80002a 2px solid;
+    scale: 1.1;
+  }
+  98% {
+    background-color: #80002a; /* Gradually fade in */
+    color: white;
+    border: #80002a 2px solid;
+    scale: 1.1;
+  }
+  100% {
+    background-color: white; 
+    color: black;
+    border: lightgray 2px solid;
+    scale: 1;
+  }
+}
+
+.loading-dots div:nth-child(1){
+  animation: fade-in1 10s ease-in-out infinite;
+}
+.loading-dots div:nth-child(2){
+  animation: fade-in2 10s ease-in-out infinite;
+}
+.loading-dots div:nth-child(3){
+  animation: fade-in3 10s ease-in-out infinite;
+}
+.loading-dots div:nth-child(4){
+  animation: fade-in4 10s ease-in-out infinite;
+}
+.loading-dots div:nth-child(5){
+  animation: fade-in5 10s ease-in-out infinite;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1365px) {
+  /* Styles for small desktops/laptops */
+  .about-component {
+    margin-top: 6rem;
+  }
+  .about-component h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-component p {
+    margin-bottom: 1rem;
+  }
+  .education-component {
+    margin-top: 0.5rem;
+    scale: 0.85;
+  }
+  .education-component .university {
+    margin: 0.5rem ;
+    padding: 1rem 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktop-about {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .education-component {
+    scale: 0.65;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    margin-top: 0;
+  }
+  .loading-dots {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .presentation-component h1 {
+    height: 0;
+    display: none;
+  }
+  .presentation-component h2 {
+    height: 0;
+    display: none;
+  }
+  .mobile-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+.mobile-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+
+  }
+
+  .mobile-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+  }
+  .mobile-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: gray;
+  }
+  .mobile-section p {
+    font-weight: 500;
+    color: gray;
+  }
+
+  .mobile-section .button-component {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem ;
+  }
+
+  .button-component > * {
+    min-width: 140px;
+    height: 50px;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 5px 15px;
+    border: #80002a 2px solid;
+  }
+
+  .button-component > *:hover {
+    transform: scale(1.1);
+    }
+  .button-component button {
+    background-color: #80002a;
+    color: white;
+
+  }
+  .button-component a {
+    background-color: white;
+    color: #80002a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktop-span {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .mobile-span {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+@media (max-width: 767px) {
+  .mobile-section {
+    height: 100vh;
+  }
+  .desktop-about {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .about-component {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+  }
+  .education-component  {
+    scale: 0.8;
+    margin-top: 0;
+  }
+  
+
+}
