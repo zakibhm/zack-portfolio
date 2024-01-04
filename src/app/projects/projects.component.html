@@ -105,9 +105,10 @@
         <div class="back-card-body">
           <p>I've developed a <span>Java client/server program</span> for image processing using <span>socket communication</span>. The client sends images to the server for applying a Sobel filter and receives the filtered images back.</p>        
         </div>
-        <div class="link-code">
+        <div class="link-code"
+        (click)="redirectToGithub($event,'https://github.com/zakibhm/Java-Sobel-Filter-Image')">
           <p>Explore the Project :</p>
-          <i (click)="redirectToGithub($event,'https://github.com/zakibhm/INF3405')" class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
       </flip-card-back>
     </flip-card>

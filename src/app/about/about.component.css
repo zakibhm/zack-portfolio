@@ -21,15 +21,15 @@
 }
 
 .presentation-component > *:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .presentation-component > *:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
-
+ 
 .education-component{
-  animation-delay: 0.8s;
+  animation-delay: 0.9s;
 }
 
 @keyframes fade-in {
@@ -327,9 +327,13 @@ p span span {
     height: auto;
     margin-bottom: 4rem;
   }
-.mobile-section img {
+.mobile-section .pf-image {
     width: 150px;
     height: 150px;
+    background-image: url("../../assets/images/pf_phone.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
     margin-bottom: 2rem;
 
@@ -399,6 +403,7 @@ p span span {
 @media (max-width: 767px) {
   .mobile-section {
     height: 100vh;
+    margin-bottom: 0;
   }
   .desktop-about {
     display: flex;
