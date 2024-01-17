@@ -100,9 +100,13 @@
   color: #5900b3;
 }
 
-/* PROJECT4 SECTION */
+/* PROJECT6 SECTION */
 .project6 span {
   color: #5900b3;
+}
+/* PROJECT7 SECTION */
+.project7 span {
+  color: #00b300;
 }
 
 
@@ -120,6 +124,7 @@
 
 .back-card-body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -128,11 +133,40 @@
   font-size: 0.9rem;
 }
 
+.project-url {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  bottom: 0;
+  left: 30%;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+.project-url:hover {
+  color:#007bff; 
+  scale: 1.1;
+  font-weight: bold;
+
+}
+.project-url a {
+  color: black;
+}
+.project-url a:hover {
+  color:#007bff;
+}
+.project-url i {
+  margin-left: 5px;
+}
+
 .link-code {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
+  animation: beatHeart 0.5s infinite alternate;
+  transition: all 0.3s ease 0s; 
 }
 .link-code p {
   font-size: 1rem;
@@ -142,12 +176,10 @@
   margin-left: 10px;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-  animation: beatHeart 0.5s infinite alternate; 
 }
-.link-code i:hover{
+.link-code:hover{
   color: #400080;
-  scale: 1.2;
+  scale: 1.1;
   animation-play-state: paused;
 }
 @keyframes beatHeart {
@@ -155,7 +187,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
 
