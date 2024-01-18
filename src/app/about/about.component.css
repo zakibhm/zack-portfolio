@@ -430,11 +430,16 @@ p span span {
 
   .chevron-container {
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .chevron-container i {
+    font-size: 2rem;
+    font-weight: bold;
   }
   .chevron-container i:nth-child(1){
     animation: fade-in1 4s ease-in-out infinite;
